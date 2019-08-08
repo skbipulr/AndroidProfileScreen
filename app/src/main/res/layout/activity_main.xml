@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:background="@color/background"
+                    android:background="@color/profile_color"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="350dp">
@@ -52,15 +52,153 @@
                         android:src="@drawable/bipul"/>
 
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bipul Sarkar"
+                        android:textColor="#fff"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"/>
 
                 </LinearLayout>
 
+
+                <android.support.v7.widget.CardView
+                    app:cardElevation="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="275dp"
+                    android:layout_width="380dp"
+                    android:layout_height="120dp">
+
+                    <LinearLayout
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="photos"
+                                android:textSize="20sp"
+                                android:textColor="@color/text_color"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="125"
+                                android:textColor="@color/profile_color"
+                                android:textSize="21sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Followers"
+                                android:textSize="20sp"
+                                android:textColor="@color/text_color"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50000+"
+                                android:textColor="@color/profile_color"
+                                android:textSize="21sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Followings"
+                                android:textSize="20sp"
+                                android:textColor="@color/text_color"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="222"
+                                android:textColor="@color/profile_color"
+                                android:textSize="21sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
             </RelativeLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:backgroundTint="@color/profile_color"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@android:color/white"
+                app:layout_collapseMode="pin"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            </android.support.v7.widget.Toolbar>
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
     </android.support.design.widget.AppBarLayout>
 
 
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:text="PROFILE ACTIVITY"/>
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
